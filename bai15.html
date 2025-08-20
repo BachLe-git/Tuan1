@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thanh Toán Đơn Hàng</title>
+</head>
+<body>
+    <h2>Form Thanh Toán Đơn Hàng</h2>
+    <form>
+        <fieldset>
+            <legend><h3>Thông Tin Cá Nhân</h3></legend>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>Địa Chỉ</h3></legend>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" required><br><br>
+            <label for="city">Thành phố:</label>
+            <input type="text" id="city" name="city" required><br><br>
+            <label for="code">Mã bưu điện:</label>
+            <input type="text" id="code" name="code" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>Hình Thức Thanh Toán</h3></legend>
+            <input type="radio" id="cod" name="payment" value="cod" checked>
+            <label for="cod">Thanh toán khi nhận hàng</label><br>
+            <input type="radio" id="bank" name="payment" value="bank">
+            <label for="bank">Chuyển khoản ngân hàng</label><br>
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Thẻ tín dụng/ghi nợ</label>
+        </fieldset>
+        <br>
+        <button type="submit">Thanh toán</button>
+    </form>
+</body>
+</html>
